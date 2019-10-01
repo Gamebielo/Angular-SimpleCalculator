@@ -1,0 +1,37 @@
+<div class="container w-50 border border-3">
+
+  <div class="p-3 x-3 justify-content-center">
+    <div class="row input">
+    <input type="text" style="text-align:right" class="input-group calculator-screen z-depth-1" disabled readonly name="display" [(ngModel)]="display">
+    </div>
+    
+    <div class="row">
+    <div id="calculator-keys" class="col-3 p-1" *ngFor="let tecla of teclas">
+      <button type="button" class="btn btn-secondary btn-block" [class.btn-danger]="!isNumber(tecla)" (click)="addDigito(tecla)" [value]="tecla"> {{ tecla }} </button>
+    </div>
+    </div>
+    
+    <div class="row">
+      <div class="p-1 col-6">
+        <button type="button" class="btn btn-block btn-info" (click)="ce()"> CE </button>
+      </div>
+
+      <div class="col-6 my-1 pr-1 pl-1">
+        <button type="button" class="btn btn-block btn-success" (click)="calcular()"> = </button>
+      </div>
+    </div>
+    
+  </div>
+
+  <div [class.d-none]="servico.logs.length <= 0">
+  <div class="container log overflow-auto">
+    <app-log></app-log>
+  </div>
+</div>
+</div>
+
+
+
+<div id="copy">
+  <a class="row justify-content-center mt-4" href="https://stackblitz.com/@Gamebielo">&copy; Gabriel de Brito Carvalho</a>
+</div>

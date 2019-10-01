@@ -1,0 +1,23 @@
+.border-3{
+  border-width: 5px !important;
+  border-color: rgb(175, 175, 175) !important;
+  border-radius: 10px;
+}
+
+.calculator-screen{
+  height: 35px;
+  border-radius: 10px;
+}
+
+.input{
+  padding-bottom: 10px;
+}
+
+#principal{
+  width: 50%;
+  height: 50%;
+}
+
+.overflow-auto{
+  text-align: center;
+}
