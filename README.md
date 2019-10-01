@@ -1,3 +1,6 @@
-# atividade-07
+# Calculadora
+Atividade feita como tarefa passada em sala de aula.
+Consiste em uma calculadora com log (histórico).
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/atividade-07)
+[Ver o Projeto ⚡️](https://stackblitz.com/edit/atividade-07)
+[Gamebielo ⚡️](https://stackblitz.com/@Gamebielo)
